@@ -12,7 +12,6 @@ namespace APIVerve.API.TexttoColor
     {
         /// <summary>
         /// The text to convert the color from
-        /// Example: turquoise
         /// </summary>
         [JsonProperty("color")]
         public string Color { get; set; }
