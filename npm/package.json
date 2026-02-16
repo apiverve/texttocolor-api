@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/texttocolor",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "Text to Color is a simple tool for converting color from natural language. It returns the color code based on the text provided.",
   "main": "index.js",
   "types": "index.d.ts",
