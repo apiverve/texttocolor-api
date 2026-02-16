@@ -228,8 +228,9 @@ from apiverve_texttocolor.apiClient import TexttocolorAPIClient
 
 api = TexttocolorAPIClient("[YOUR_API_KEY]")
 
+query = { "color": "turquoise" }
+
 try:
-    query = { "color": "turquoise" }
     result = api.execute(query)
     print(result)
 finally:
