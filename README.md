@@ -30,7 +30,11 @@ The Text to Color API provides a simple, reliable way to integrate text to color
 ```javascript
 async function callTexttoColorAPI() {
     try {
-        const response = await fetch('https://api.apiverve.com/v1/texttocolor', {
+        const params = new URLSearchParams({
+            color: 'turquoise'
+        });
+
+        const response = await fetch(`https://api.apiverve.com/v1/texttocolor?${params}`, {
             method: 'GET',
             headers: {
                 'x-api-key': 'YOUR_API_KEY_HERE'
@@ -50,7 +54,7 @@ callTexttoColorAPI();
 ### Using cURL
 
 ```bash
-curl -X GET "https://api.apiverve.com/v1/texttocolor?param=value" \
+curl -X GET "https://api.apiverve.com/v1/texttocolor?color=turquoise" \
   -H "x-api-key: YOUR_API_KEY_HERE"
 ```
 
@@ -150,7 +154,7 @@ go get github.com/apiverve/texttocolor-api/go
 |---------|---------|
 | **Multi-language SDKs** | Native packages for JavaScript, Python, C#, Go, and Android |
 | **Simple Integration** | Single API key authentication, consistent response format |
-| **Production Ready** | 99.9% uptime, fast response times, used by thousands of developers |
+| **Production Ready** | 99.9% uptime SLA, served from 24 global regions |
 | **Comprehensive Docs** | Full examples, OpenAPI spec, and dedicated support |
 
 ---
@@ -169,7 +173,7 @@ go get github.com/apiverve/texttocolor-api/go
 The Text to Color API is commonly used for:
 
 - **Web Applications** - Add text to color features to your frontend or backend
-- **Mobile Apps** - Native SDKs for iOS and Android development
+- **Mobile Apps** - Native SDKs for Android development
 - **Automation** - Integrate with n8n, Zapier, or custom workflows
 - **SaaS Products** - Enhance your product with text to color capabilities
 - **Data Pipelines** - Process and analyze data at scale
