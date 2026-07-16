@@ -25,6 +25,9 @@ namespace APIVerve.API.TexttoColor
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -45,7 +48,7 @@ namespace APIVerve.API.TexttoColor
         public string Cmyk { get; set; }
 
         [JsonProperty("ansi16")]
-        public long Ansi16 { get; set; }
+        public long? Ansi16 { get; set; }
 
         [JsonProperty("channels")]
         public Channels Channels { get; set; }
@@ -54,18 +57,30 @@ namespace APIVerve.API.TexttoColor
     public partial class Channels
     {
         [JsonProperty("rgbChannels")]
-        public long RgbChannels { get; set; }
+        public long? RgbChannels { get; set; }
 
         [JsonProperty("cmykChannels")]
-        public long CmykChannels { get; set; }
+        public long? CmykChannels { get; set; }
 
         [JsonProperty("ansiChannels")]
-        public long AnsiChannels { get; set; }
+        public long? AnsiChannels { get; set; }
 
         [JsonProperty("hexChannels")]
-        public long HexChannels { get; set; }
+        public long? HexChannels { get; set; }
 
         [JsonProperty("hslChannels")]
-        public long HslChannels { get; set; }
+        public long? HslChannels { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
