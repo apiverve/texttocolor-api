@@ -2,8 +2,9 @@ openapi: 3.0.4
 info:
   title: Text to Color
   description: >-
-    Text to Color is a simple tool for converting color from natural language.
-    It returns the color code based on the text provided.
+    Text to Color converts natural language color names into hexadecimal color
+    codes. Send descriptive color phrases to receive matching hex values and
+    channel counts, with paid plans adding RGB, HSL, and CMYK formats.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +19,7 @@ servers:
 paths:
   /v1/texttocolor:
     get:
-      summary: Generate Color from Natual Language
+      summary: Text to Color
       description: Generate a color from text
       operationId: texttocolor
       parameters:
