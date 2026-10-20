@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/texttocolor",
-  "version": "1.2.0",
-  "description": "Text to Color is a simple tool for converting color from natural language. It returns the color code based on the text provided.",
+  "version": "1.2.2",
+  "description": "Text to Color converts natural language color names into hexadecimal color codes. Send descriptive color phrases to receive matching hex values and channel counts, with paid plans adding RGB, HSL, and CMYK formats.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "text to color", "text to color api", "text to color tool", "text to color software", "text to color service"
+    "text to color api", "color name to hex", "convert color description", "natural language color", "parse color name"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/texttocolor-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/texttocolor?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/texttocolor?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
