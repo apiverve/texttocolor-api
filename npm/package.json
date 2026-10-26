@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/texttocolor",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Text to Color converts natural language color names into hexadecimal color codes. Send descriptive color phrases to receive matching hex values and channel counts, with paid plans adding RGB, HSL, and CMYK formats.",
   "main": "index.js",
   "types": "index.d.ts",
