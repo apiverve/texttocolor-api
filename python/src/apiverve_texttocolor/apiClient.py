@@ -24,7 +24,7 @@ class ValidationError(TexttocolorAPIClientError):
 class TexttocolorAPIClient:
     # Validation rules for parameters (generated from schema)
     VALIDATION_RULES = {
-        "color": {"type": "string", "required": True}
+        "color": {"type": "string", "required": True, "minLength": 1}
     }
 
     # Format validation patterns
